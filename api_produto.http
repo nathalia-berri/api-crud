@@ -1,0 +1,23 @@
+GET http://localhost:3000/produto HTTP/1.1
+Content-Type: application/json
+###
+
+POST http://localhost:3000/produto HTTP/1.1
+Content-Type: application/json
+
+{
+    "id_produto": 1,
+    "nome_produto": "Ruffles Chips",
+    "descricao_produto": "Batatinha Chips de cebola 300g",
+    "preco_produto": "8.99",
+    /*"id_unid_med": // CHAVE ESTRANGEIRA, VEM DA OUTRA TABELA*/
+}
+###
+// ------------------------------------------------------
+PUT http://localhost:3000/produto HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome_produto": "Leite",
+}
+// ----------------------------------------------- 
